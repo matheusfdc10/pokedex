@@ -30,7 +30,7 @@ export const StyleContainer = styled.div`
         > div {
             margin: 10px;
             display: flex;
-            max-height: 210px;
+            max-height: 205px;
 
             > a {
                 padding: 12px;

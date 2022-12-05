@@ -50,7 +50,7 @@ export default function Container({ search }) {
                     <div key={pokemon.data.id}>
                         <a> 
                             <img src={pokemon.data.sprites.front_default} width="150px" height="150px"></img>
-                            <span>{pokemon.data.name}</span>
+                            <span>{pokemon.data.id} - {pokemon.data.name}</span>
                         </a>
                     </div>)
                 })}
