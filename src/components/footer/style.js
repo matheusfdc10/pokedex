@@ -7,6 +7,7 @@ export const StyledFooter = styled.div`
     div {
         padding: 40px 0px;
         text-align: center;
+        color: white;
         p a {
             font-weight: bold;
             color: #0078d7;
