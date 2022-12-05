@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
     background-color: blue;
     display: flex;
     align-items: center;
-    height: 60px;
+    padding: 6px;
 
     > div {
         margin-left: 30px;

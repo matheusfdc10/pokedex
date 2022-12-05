@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.div`
     height: 100px;
     background: red;
+    flex-shrink: 0;
     div {
         padding: 40px 0px;
         text-align: center;
