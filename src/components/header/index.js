@@ -5,7 +5,7 @@ export default function Header({ search, setSearch}) {
     return (
         <StyledHeader>
             <div>
-                <h1>PokeDex</h1>
+                <h1>PokéDex</h1>
             </div>
 
             <input type="text" placeholder="Buscar"

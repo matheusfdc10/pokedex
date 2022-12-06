@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    background-color: blue;
+    background-color: #ef5350;
     display: flex;
     align-items: center;
     padding: 6px;
@@ -9,6 +9,10 @@ export const StyledHeader = styled.header`
     > div {
         margin-left: 30px;
         color: white;
+
+        > h1 {
+            color: #feca1b;
+        }
     }
         
     > input {
