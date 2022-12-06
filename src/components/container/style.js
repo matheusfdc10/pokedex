@@ -46,5 +46,10 @@ export const StyleContainer = styled.div`
                 }
             }
         }
+
+        > div:hover {
+            background: #0002;
+            cursor: pointer;
+        }
     }
 `

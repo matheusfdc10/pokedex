@@ -15,6 +15,10 @@ export const StyledInformationPokemon = styled.div`
         width: 300px;
         align-items: center;
 
+        > button {
+            margin: 5px;
+        }
+
         > div {
             display: flex;
             flex-direction: column;
