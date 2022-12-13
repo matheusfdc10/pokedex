@@ -69,7 +69,7 @@ export const StyleContainer = styled.div`
                         max-width: 120px;   
                     }
 
-                    > span {
+                    > .name {
                         font-size: 12px;
                     }
                 }
@@ -84,7 +84,7 @@ export const StyleContainer = styled.div`
                         max-width: 90px;   
                     }
 
-                    > span {
+                    > .name {
                         font-size: 12px;
                     }
                 }
