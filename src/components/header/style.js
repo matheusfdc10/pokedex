@@ -4,21 +4,28 @@ export const StyledHeader = styled.header`
     background-color: #ef5350;
     display: flex;
     align-items: center;
-    padding: 6px;
     box-shadow: 0px 0px 10px black;
+    position: fixed;
+    width: 100%;
 
     > div {
+        padding: 10px 0;
         margin-left: 30px;
-        color: white;
 
-        > h1 {
-            color: #feca1b;
+        > img {
+            max-width: 150px;
+        }
+
+        @media (max-width: 431px) {
+            margin-left: 20px;
+            
+            > img {
+                max-width: 110px;
+            }
         }
     }
         
     > input {
-        display: flex;
-        flex-direction: row;
         border: none;
         outline: none;
         max-width: 300px;
@@ -29,6 +36,10 @@ export const StyledHeader = styled.header`
         margin: auto;
         font-size: 15px;
         padding-left: 12.5px;
+
+        @media (max-width: 521px) {
+            margin: 0px 15px;
+        }
     }
     
 `

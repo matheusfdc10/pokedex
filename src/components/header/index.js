@@ -1,11 +1,12 @@
 import { StyledHeader } from './style'
+import logo from '../../assets/logo.png'
 
 export default function Header({ search, setSearch}) {
 
     return (
         <StyledHeader>
             <div>
-                <h1>PokéDex</h1>
+                <img src={logo} />
             </div>
 
             <input type="text" placeholder="Buscar"

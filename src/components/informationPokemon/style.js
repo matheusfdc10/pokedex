@@ -11,12 +11,16 @@ export const StyledInformationPokemon = styled.div`
 
     > div {
         background-color: white;
-        height: 400px;
         width: 300px;
         align-items: center;
+        border-radius: 10px;
+        padding: 16px;
 
         > button {
-            margin: 5px;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            color: red;
         }
 
         > div {
@@ -25,8 +29,8 @@ export const StyledInformationPokemon = styled.div`
             align-items: center;
         }
 
-        > h3 {
-            margin-left: 20px;
+        > ul {
+            padding-left: 25px;
         }
     }
 `
