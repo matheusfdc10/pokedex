@@ -3,26 +3,26 @@ import { StyleContainer } from './style'
 import InformationPokemon from '../informationPokemon'
 import axios from 'axios'
 
-export default function Container({ search }) {
+export default function Container({ search, getSearch }) {
     const [ visible, setVisible ] = useState(false)
     const [ pokemons, setPokemons ] = useState([])
     const [ pokemon, setPokemon ] = useState({})
-    const [ prox, setProx ] = useState(0)
+    const [ pagina, setPagina ] = useState(0)
 
     useEffect(() => {
-        getPokemons(prox)
+        getPokemons(pagina)
     }, [])
 
     function proximo(set) {
         set += 24
-        setProx(set)
+        setPagina(set)
         getPokemons(set)
     } 
 
     function voltar(set) {
         if (set == 0) return
         set -= 24
-        setProx(set)
+        setPagina(set)
         getPokemons(set)
     } 
     
@@ -45,15 +45,17 @@ export default function Container({ search }) {
         setVisible(true)
         setPokemon(dadosPokemon)
     }
- 
+
+    const getPokemon = !!getSearch[0]?.data.name ? getSearch : pokemons
+    
     return (
         <>
         <StyleContainer>
             <section>
-                {pokemons.filter(pokemon => {
-                    const nameNormalized = pokemon.data.name.toLowerCase()
-                    const searchValueNormalized = search.toLowerCase()        
-                    return nameNormalized.includes(searchValueNormalized)
+                {getPokemon.filter(pokemon => {
+                    const name = pokemon.data.name.toLowerCase()
+                    const id = pokemon.data.id
+                    return name.includes(search) || id == search
                 }).map((pokemon)=> {
                     return( 
                     <div key={pokemon.data.id} 
@@ -67,10 +69,10 @@ export default function Container({ search }) {
                     </div>)
                 })}
             </section>
-            
-            <div>
-                <button onClick={() => voltar(prox)}>Voltar</button>
-                <button onClick={() => proximo(prox)}>Próximo</button>
+
+            <div className="buttons">
+                <button onClick={() => voltar(pagina)}>Voltar</button>
+                <button onClick={() => proximo(pagina)}>Próximo</button>
             </div>
         </StyleContainer>
         

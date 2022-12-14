@@ -13,7 +13,7 @@ export const StyleContainer = styled.div`
         margin-top: 60px;
     }
 
-    > div {
+    > .buttons {
         align-items: center;
         display: flex;
         justify-content: center;
