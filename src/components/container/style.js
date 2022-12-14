@@ -7,6 +7,7 @@ export const StyleContainer = styled.div`
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     @media (max-width: 431px) {
         margin-top: 60px;
@@ -31,7 +32,6 @@ export const StyleContainer = styled.div`
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
-        flex: 1;
 
         > div {
             margin: 10px;

@@ -27,6 +27,10 @@ export const StyledInformationPokemon = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            > h1 {
+                text-align: center;
+            }
         }
 
         > ul {
