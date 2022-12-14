@@ -41,7 +41,7 @@ export const StyleContainer = styled.div`
             > a {
                 padding: 12px;
                 border: solid 1px;
-                justify-content: center;
+                justify-content: space-between;
                 display: flex;
                 flex-direction: column;
                 align-items: center;    
