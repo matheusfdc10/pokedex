@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
   const [ search, setSearch ] = useState('')
   const [ getSearch, setGetSearch ] = useState([])
-console.log(getSearch)
+
   return (
     <>
       <Header search={search} setSearch={setSearch} setGetSearch={setGetSearch}/>
