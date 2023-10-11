@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
     box-shadow: 0px 0px 10px black;
     position: fixed;
     width: 100%;
+    z-index: 100;
 
     > div {
         padding: 10px 0;
