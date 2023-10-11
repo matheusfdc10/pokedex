@@ -28,10 +28,12 @@ export const StyleContainer = styled.div`
     }
 
     > section {
+        margin: auto;
+        max-width: 1500px;
         margin-top: 12px;
         display: grid;
         /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
-        grid-template-columns: repeat(8, minmax(180px, 1fr));
+        grid-template-columns: repeat(6, minmax(180px, 1fr));
         gap: 24px;
         /* display: flex;
         justify-content: center;
